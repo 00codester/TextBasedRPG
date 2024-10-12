@@ -1,6 +1,8 @@
 import java.util.Random;
 
 public class Explore {
+
+    //randomly decides what you find when you explore a room
     public int genoption() {
         Random random = new Random();
         int exploreresult;
@@ -16,12 +18,13 @@ public class Explore {
 
         return exploreresult;
     }
-
+    //find nothing exploring
     static int findNothing(){
         System.out.println("You find nothing in your search\n");
         return 0;
     }
 
+    //find a skill while exploring
     int findItem(){
         //System.out.println("You found a new skill!\n");
         //int randint = random.nextInt(5)
@@ -31,6 +34,7 @@ public class Explore {
         return 1;
     }
 
+    //find an enemy exploring
     static int findEnemy(){
         System.out.println("You found an Enemy! Fight!\n");
         return 2;

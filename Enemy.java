@@ -7,6 +7,8 @@ public class Enemy {
     int damage = 0;
     int evasion = 0;
     String enemydesc = "generic enemy";
+
+    //determines which enemy you will fight if you run into one exploring
     public void pickenemy(){
        Random random = new Random();
         //lesserlizard();
@@ -63,22 +65,27 @@ public class Enemy {
         enemydesc = "This is the vile creature that has taken the princess and slain many adventurers. Take care in this battle.\n";
     }
 
+    //gives the description of the enemy
     public void enemydesc(){
         System.out.println(enemydesc);
     }
 
+    //takes away enemy health
     public void takeenemyhealth(int takeaway){
         health -= takeaway;
     }
 
+    //lets you know enemy health
     public int gethealth(){
         return health;
     }
 
+    //gets the enemy name
     public String getname(){
         return name;
     }
 
+    //gets the enemy damage
     public int getdamage(){
         return damage;
     }

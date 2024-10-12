@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Battle {
+
+    //starts the battle if you run into an enemy exploring
     public void startBattle(Player theplayer, Enemy theEnemy, Skills playerskills){
         Enemy enemy = theEnemy;
         Player player = theplayer;
