@@ -20,6 +20,7 @@ public class Enemy {
 
     }
 
+    //Lesser Lizard enemy stats
     public void lesserlizard(){
         name = "Lesser Lizard";
         health = 4;
@@ -30,6 +31,7 @@ public class Enemy {
 
     }
 
+    //Corpse Enemy stats
     public void corpse(){
         //int numofcorpses = amount;
         name = "Vile Corpse";
@@ -41,6 +43,7 @@ public class Enemy {
 
     }
 
+    //Wraith enemy stats
     public void wraith(){
         name = "Soul Wraith";
         health = 3;
@@ -50,6 +53,7 @@ public class Enemy {
         enemydesc = "These creatures are the souls of the fallen, trapped by the dragons magic. The can hit hard so watch out.\n";
     }
 
+    //Dragon boss enemy stats
     public void boss(){
         name = "Dragon";
         health = 20;

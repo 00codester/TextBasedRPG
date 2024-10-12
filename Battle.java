@@ -29,7 +29,7 @@ public class Battle {
         }
 
     }
-
+    //determines what attacks you can use in battle and how much damage you'll do based on that attack
     private void playerattack(Player theplayer, Enemy theenemy, Skills pSkills){
         Scanner uin = new Scanner(System.in);
         Player player = theplayer;
@@ -47,6 +47,8 @@ public class Battle {
 
         System.out.println("The " + enemy.getname() + " has: " + enemy.gethealth() + " health left.\n");
     }
+
+    //determines how much damage the enemy will do to you
     public void enemyattack(Player theplayer, Enemy theenemy){
         Player player = theplayer;
         Enemy enemy = theenemy;
@@ -60,6 +62,7 @@ public class Battle {
         System.out.println("You have " + phealth + " health left.\n");
     }
 
+    //determines how much damage your attack will do based on which attack you selected
     public int pdamagemodifier(String pchoice, int pattack){
         int totaldamage = pattack;
         int ad = pattack;

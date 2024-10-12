@@ -8,7 +8,6 @@ public class MainGame {
         Scanner uin = new Scanner(System.in);
         String fname;
         int explorecounter = 0;
-        //int dead = 1;
 
         System.out.println("What is your name?");
         fname = uin.nextLine();
@@ -28,7 +27,7 @@ public class MainGame {
             System.out.println("What would you like to do adventurer?");
             System.out.println("-\"explore\" the room");
             System.out.println("-\"move\" to a different room");
-            System.out.println("-Check \"inventory\"");
+            //System.out.println("-Check \"inventory\"");
             System.out.println("-view the \"map\"");
             String choice = uin.nextLine();
 
@@ -51,9 +50,9 @@ public class MainGame {
                     mapCall(uin, gameMap);
                     explorecounter = 0;
                 }
-                case "inventory" -> {
-                    inventoryCall();
-                }
+                // case "inventory" -> {
+                //     inventoryCall();
+                // }
                 case "map" -> {
                     System.out.println();
                     gameMap.genMap();
@@ -87,6 +86,7 @@ public class MainGame {
             
     }
 
+    // This allows you to move around the game map
     static void mapCall(Scanner uin, Map gameMap){
             String direction;
             String message;
@@ -130,6 +130,7 @@ public class MainGame {
             System.out.println();
     }
 
+    // This calls the explore class and determines if you find a skill, run into an enemy, or find nothing.
     static void exploreCall(Player theplayer, Skills playerskills){
         Explore exploreRoom = new Explore();
         Skills pskills = playerskills;
@@ -153,9 +154,9 @@ public class MainGame {
         }
     }
 
-    static void inventoryCall(){
-        System.out.println("inventory");
-    }
+    // static void inventoryCall(){
+    //     System.out.println("inventory");
+    // }
 
 }
 

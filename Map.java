@@ -18,6 +18,7 @@ public class Map{
 
     }
 
+    //creates a physical copy of the map to be viewed for the player
     public void genMap (){
 
         maplevel[pmapy][pmapx] = player;
@@ -31,6 +32,7 @@ public class Map{
         }
     }
 
+    //moves player a room left
     public String moveLeft (){
         maplevel[pmapy][pmapx] = room;
         try{
@@ -46,6 +48,7 @@ public class Map{
         }
     }
 
+    //moves player a room right
     public String moveRight () {
         maplevel[pmapy][pmapx] = room;
         try{
@@ -61,6 +64,7 @@ public class Map{
         }
     }
 
+    //moves player a room down
     public String moveDown () {
         maplevel[pmapy][pmapx] = room;
         try{
@@ -76,6 +80,7 @@ public class Map{
         }
     }
 
+    //moves player a room up
     public String moveUp () {
         maplevel[pmapy][pmapx] = room;
         try{
@@ -91,6 +96,7 @@ public class Map{
         }
     }
 
+    //gives player's coordinates for troubleshooting
     public String pcoords(){
         String x = Integer.toString(pmapx);
         String y = Integer.toString(pmapy);
